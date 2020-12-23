@@ -524,11 +524,6 @@ ol {
 .header__btn {
     padding: 57px 0 56px;
 }
-.header__logo {
-    /* padding: 50px 0 40px; */
-    
-    text-align: center;
-}
 .header__logo a {
     display: inline-block;
 }
@@ -2635,10 +2630,30 @@ ol {
     .container {
         max-width: 1170px;
     }
+    
+    .header__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 500%;
+        max-height: 80%;
+        text-align: center;
+    }
 }
 
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 500%;
+        max-height: 80%;
+        text-align: center;
+    }
+    
     .header__menu ul li {
         margin-right: 34px;
     }
@@ -2670,6 +2685,16 @@ ol {
 
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 500%;
+        max-height: 80%;
+        text-align: center;
+    }
+    
     .header__megamenu__wrapper {
         max-width: 730px;
     }
@@ -2746,6 +2771,32 @@ ol {
     
     .contact__form {
         padding-top: 15px;
+    }
+    
+    .header {
+        overflow-x: hidden;
+    }
+    
+    .header__logo {
+        overflow: hidden;
+        overflow-x: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 300px;
+    }
+    
+    .mobile_image {
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
     }
     
     .header__menu {
@@ -2825,8 +2876,36 @@ ol {
         align-items: flex-start;
     }
     
+    .footer {
+        padding-top: 1000px;
+    }
+    
     .footer__instagram__item {
         height: 180px;
+    }
+    
+    .humberger__open {
+        text-align: left;
+    }
+    
+    .main {
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    
+    .list_image {
+        overflow-x: hidden;
+    }
+    
+    .row {
+        overflow-x: hidden;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+    }
+    
+    .column {
+        text-align: center;
     }
 }
 
